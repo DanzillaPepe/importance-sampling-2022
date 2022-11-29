@@ -13,9 +13,9 @@ url_shares_common = 'https://drive.google.com/file/d/1lLQV4oc30mo1_m39p4JXlpd1gV
 url_commodities_common = 'https://drive.google.com/file/d/1GFq1jcV00BjFEa7hmZSO1xD7K4j4gv3O/view?usp=sharing'
 url_crypto_common = 'https://drive.google.com/file/d/1mPP5Vb57Jc2mYPeLYZPgAJM8ogjiguSO/view?usp=sharing'
 
-URLS = {'shares': url_shares_common,
-        'commodities': url_commodities_common,
-        'crypto': url_crypto_common}
+URLS = {'shares': url_shares,
+        'commodities': url_commodities,
+        'crypto': url_crypto}
 
 
 class Dataloader:

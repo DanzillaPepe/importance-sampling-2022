@@ -89,7 +89,7 @@ class TestModels:
     def setup_class(self):
         assets = ['AAPL', 'GOOGL']
         weights = [0.3, 0.7]
-        returns = stocks_returns(assets, weights, from_date='09/02/2020', to_date='09/02/2022')
+        returns = stocks_returns(assets, weights, from_date='09/02/2018', to_date='09/02/2022')
         logreturns = np.log(returns + 1)
         self.loader = Dataloader(
             series=logreturns,
@@ -118,7 +118,6 @@ class TestModels:
         var = []
         target = []
         for feat, _target in self.loader:
-
             var.append(rm.forecast(feat))
             target.append(_target)
         var = np.array(var)
